@@ -1,5 +1,5 @@
 export type TUser = {
-  userName: string;
+  username: string;
   email: string;
   password: string;
   role: "user" | "admin";

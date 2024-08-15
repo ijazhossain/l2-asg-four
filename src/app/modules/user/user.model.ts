@@ -2,7 +2,7 @@ import { model, Schema } from "mongoose";
 import { TUser } from "./user.interface";
 
 const userSchema = new Schema<TUser>({
-  userName: {
+  username: {
     type: String,
     required: true,
     unique: true,
@@ -10,7 +10,6 @@ const userSchema = new Schema<TUser>({
   email: {
     type: String,
     required: true,
-    unique: true,
   },
   password: {
     type: String,
